@@ -3,7 +3,7 @@
 function custom_follow_follow_networks_alter(&$networks, $uid = 0) {
   // Add a network.
   $networks[$uid]['github'] = array(
-    'title' => t('_GitHub'),
+    'title' => t('GitHub'),
     'domain' => 'github.com',
   );
 }
