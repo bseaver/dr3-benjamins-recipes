@@ -8,10 +8,11 @@ function simple_contact_form_alter(&$form, &$form_state, $form_id) {
     $form['copy']['#access'] = 0;
     $form['copy']['#default_value'] = 1;
 
-    if(0) {
-      print_r('<pre>');
-      print_r($form);
-      print_r('</pre>');
-    }
+  }
+
+  if(0) {
+    print_r('<pre>');
+    print_r($form);
+    print_r('</pre>');
   }
 }
