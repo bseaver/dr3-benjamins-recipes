@@ -1,0 +1,6 @@
+name = Custom Follow
+description = Follow user's GitHub
+core = 7.x
+package = Epicodus Custom Modules
+files[] = custom_follow.module
+stylesheets[all][] = custom_follow.css
