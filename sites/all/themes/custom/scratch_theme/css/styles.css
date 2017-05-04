@@ -1,0 +1,9 @@
+#logo img {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+.region {
+  background-color: lightgrey;
+}
