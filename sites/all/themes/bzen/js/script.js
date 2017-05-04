@@ -19,11 +19,31 @@
     attach: function (context, settings) {
 
       jQuery(document).ready(function($) {
-        $('h2').click(function(){
-          alert('I am an h2!');
-        });
-      });
+        // $('h2').click(function(){
+        //   alert('I am an h2!');
+        // });
 
+        $('img.header__logo-image').hover(
+          function () {
+            setRotation($(this), 180);
+          },
+
+          function () {
+            setRotation($(this), 0);
+          }
+        );
+
+        // From: https://jsfiddle.net/Dunkel85/d4c9d6en/
+        function setRotation(target, deg) {
+          target.css({    // rotate element via css
+            '-webkit-transform': 'rotate(' + deg + 'deg)',
+            '-moz-transform': 'rotate(' + deg + 'deg)',
+            '-ms-transform': 'rotate(' + deg + 'deg)',
+            'transform': 'rotate(' + deg + 'deg)'
+          });
+        }
+
+      });
     }
   };
 
